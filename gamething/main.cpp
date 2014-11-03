@@ -1,9 +1,5 @@
 //
 //  main.cpp
-//  gamething
-//
-//  Created by Marko Heini on 03/11/14.
-//  Copyright (c) 2014 mh. All rights reserved.
 //
 
 #include <iostream>
