@@ -12,6 +12,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#define FPS 1.0/60
+
 static void error_callback(int error, const char* description)
 {
     fputs(description, stderr);
@@ -73,7 +75,29 @@ int main(int argc, const char * argv[])
     std::cout << "OpenGL version supported: " << version << "\n";
     std::cout << "Shader lang: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << "\n";
 
-    // TODO: stuff here..
+    double currentTimeMillis = 0;
+    double lastRenderMillis = 0;
+
+    bool running = true;
+    while (running == 1) {
+
+        currentTimeMillis = glfwGetTime();
+
+        glfwPollEvents();
+
+        // update();
+
+        if(currentTimeMillis - lastRenderMillis > FPS) {
+            // render(pWindow);
+            lastRenderMillis = glfwGetTime();
+        }
+
+        if(glfwGetKey(pWindow, GLFW_KEY_ESCAPE ) == GLFW_PRESS ||
+                glfwWindowShouldClose(pWindow) == 1) {
+            // Break the loop
+            running = false;
+        }
+    }
 
     return 0;
 }
