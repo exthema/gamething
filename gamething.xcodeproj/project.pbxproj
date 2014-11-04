@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFE9409A361D13246E069061 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9496494A0BD5F691EE5B0 /* OpenGL.framework */; };
-		BFE941644CD5FC56CFF5DE9D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE941B7BC82787D67863368 /* Cocoa.framework */; };
-		BFE9417DA5A679CAC6F8788C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE9407E08F3556FC83302D0 /* CoreVideo.framework */; };
+		BFE9405EC389D0DAEB6AE42A /* libGLEW.1.10.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94B8EBFD084AAA8CA7349 /* libGLEW.1.10.0.dylib */; };
+		BFE940DFB69248254050E422 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94526A36815451B6577E6 /* Cocoa.framework */; };
+		BFE942975A598F138AFE237B /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE949EEA55C1145F94F751C /* libglfw.3.1.dylib */; };
 		BFE944175E64E50EAAEE5B2E /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE94CB66D29E677D843AAD8 /* glm.cpp */; };
 		BFE945FEA59D24FB12033639 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE945ACD119A35BA03A42C7 /* main.cpp */; };
 		BFE9461933B42541DE40733E /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE94CADE2CD270A50EEA991 /* dummy.cpp */; };
-		BFE94702B228976D642B2FB8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94D79E420F664A0E09230 /* IOKit.framework */; };
-		BFE94B74767218CCCB631D27 /* libGLEW.1.10.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94BC3119B88B2EDDCB3DF /* libGLEW.1.10.0.dylib */; };
-		BFE94EA56F5D583BF1287774 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94422930998FFA96F2C98 /* libglfw.3.1.dylib */; };
+		BFE9465EB9858A24F27FE5D2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94E993F61B2F3BC182226 /* IOKit.framework */; };
+		BFE94A41856C09D1AE0CAD28 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE944BDFC4A35D03424CF2A /* CoreVideo.framework */; };
+		BFE94C4938FF7BA0B957E368 /* ShaderContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE941CA7804029EF603FA7D /* ShaderContainer.cpp */; };
+		BFE94D95153AB7594593D4D0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94F77FA304250827CD128 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +37,6 @@
 		BFE9403CE321B754C9087CAA /* component_wise.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = component_wise.inl; sourceTree = "<group>"; };
 		BFE9403E19C7A70DA9E078B2 /* trigonometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trigonometric.hpp; sourceTree = "<group>"; };
 		BFE94053586755AD2E88C15B /* matrix_query.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = matrix_query.inl; sourceTree = "<group>"; };
-		BFE9407E08F3556FC83302D0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		BFE940863A7F0C2D16556421 /* io.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = io.hpp; sourceTree = "<group>"; };
 		BFE9408F73AE2039A28FCD8E /* closest_point.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = closest_point.inl; sourceTree = "<group>"; };
 		BFE940999A62D1566B3CB55F /* vector_angle.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = vector_angle.inl; sourceTree = "<group>"; };
@@ -67,9 +67,9 @@
 		BFE94180FFBF85EDD388E80E /* handed_coordinate_space.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = handed_coordinate_space.hpp; sourceTree = "<group>"; };
 		BFE9419D4B53CFD4265A48B9 /* epsilon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = epsilon.hpp; sourceTree = "<group>"; };
 		BFE941AD3443E9D9EE4541BD /* type_vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec4.hpp; sourceTree = "<group>"; };
-		BFE941B7BC82787D67863368 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BFE941C1942D218AC7608861 /* func_exponential.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = func_exponential.inl; sourceTree = "<group>"; };
 		BFE941C7DC73210831F53050 /* log_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = log_base.hpp; sourceTree = "<group>"; };
+		BFE941CA7804029EF603FA7D /* ShaderContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderContainer.cpp; sourceTree = "<group>"; };
 		BFE941D95F289266DBA97BBD /* type_ptr.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_ptr.inl; sourceTree = "<group>"; };
 		BFE941DA14A2E539413E4C31 /* vector_angle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_angle.hpp; sourceTree = "<group>"; };
 		BFE941DEE1601BE2C97C50EC /* wrap.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = wrap.inl; sourceTree = "<group>"; };
@@ -89,6 +89,7 @@
 		BFE942C3B136524156D82D19 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		BFE942EDB1409EF0C83D1102 /* constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = constants.hpp; sourceTree = "<group>"; };
 		BFE9430A7CB27280EA71ACD4 /* func_integer.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = func_integer.inl; sourceTree = "<group>"; };
+		BFE943116315FF63AE2BBDD6 /* ColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.vsh; sourceTree = "<group>"; };
 		BFE94332CAE193B14026146A /* multiple.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = multiple.inl; sourceTree = "<group>"; };
 		BFE943646CC5FFDD9F974764 /* intrinsic_common.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = intrinsic_common.inl; sourceTree = "<group>"; };
 		BFE9438AFF48A738EFB2C595 /* dual_quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dual_quaternion.hpp; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		BFE943FAA6B75AE67FB888B7 /* gradient_paint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gradient_paint.hpp; sourceTree = "<group>"; };
 		BFE9441964E955C5E1E370D2 /* simd_mat4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simd_mat4.hpp; sourceTree = "<group>"; };
 		BFE9441C020172CE24807060 /* packing.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = packing.inl; sourceTree = "<group>"; };
-		BFE94422930998FFA96F2C98 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		BFE9442C4693F4D10F8CF20F /* intrinsic_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intrinsic_common.hpp; sourceTree = "<group>"; };
 		BFE9443BD40380C5049999B5 /* norm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = norm.hpp; sourceTree = "<group>"; };
 		BFE94452814A3F4CE46D8E9C /* mixed_product.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = mixed_product.inl; sourceTree = "<group>"; };
@@ -110,6 +110,7 @@
 		BFE944A9F613C754CB42CEDD /* _swizzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle.hpp; sourceTree = "<group>"; };
 		BFE944AA3BB862BEB33E501A /* color_space_YCoCg.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = color_space_YCoCg.inl; sourceTree = "<group>"; };
 		BFE944B1BED14E069C6CDDB1 /* ulp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ulp.hpp; sourceTree = "<group>"; };
+		BFE944BDFC4A35D03424CF2A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
 		BFE944C26B15FD2F5325964F /* type_mat2x4.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat2x4.inl; sourceTree = "<group>"; };
 		BFE944C8BFA06E4877ACB128 /* matrix_cross_product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_cross_product.hpp; sourceTree = "<group>"; };
 		BFE944DD57F80CB146C0AF40 /* multiple.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = multiple.hpp; sourceTree = "<group>"; };
@@ -120,11 +121,13 @@
 		BFE9450BC18870CB865D4602 /* type_gentype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_gentype.hpp; sourceTree = "<group>"; };
 		BFE94510E8C7599A3B34467C /* type_mat4x2.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat4x2.inl; sourceTree = "<group>"; };
 		BFE9451707865C463EFBC0D8 /* simd_mat4.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = simd_mat4.inl; sourceTree = "<group>"; };
+		BFE94526A36815451B6577E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<group>"; };
 		BFE94533C5AA6A2E5F5A6D01 /* normalize_dot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = normalize_dot.hpp; sourceTree = "<group>"; };
 		BFE9453AB1A9E17490C2E8BF /* func_trigonometric.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = func_trigonometric.inl; sourceTree = "<group>"; };
 		BFE9456CBF37AC73B7FEC4CC /* norm.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = norm.inl; sourceTree = "<group>"; };
 		BFE94577487333745BE15039 /* handed_coordinate_space.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = handed_coordinate_space.inl; sourceTree = "<group>"; };
 		BFE9457EC0B25F09CC5EA689 /* compatibility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compatibility.hpp; sourceTree = "<group>"; };
+		BFE9459646A31A45D28962D3 /* gamething */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = gamething; path = "../../../Library/Caches/appCode20/DerivedData/gamething-c4c47759/Build/Products/Debug/gamething"; sourceTree = "<group>"; };
 		BFE945ACD119A35BA03A42C7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BFE945B1AB03E96386735A68 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		BFE945E60A2C025D50330E77 /* extented_min_max.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extented_min_max.hpp; sourceTree = "<group>"; };
@@ -184,11 +187,11 @@
 		BFE949474C028710CA2C9450 /* integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = integer.hpp; sourceTree = "<group>"; };
 		BFE949528B2DD1258D358837 /* polar_coordinates.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = polar_coordinates.inl; sourceTree = "<group>"; };
 		BFE949636588FBD307D50F24 /* spline.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = spline.inl; sourceTree = "<group>"; };
-		BFE9496494A0BD5F691EE5B0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		BFE949C7DFEBF1C20C4B802D /* intrinsic_exponential.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = intrinsic_exponential.inl; sourceTree = "<group>"; };
 		BFE949C9982FAC80A001220F /* simd_quat.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = simd_quat.inl; sourceTree = "<group>"; };
 		BFE949CA6604504811C964D0 /* type_mat4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x4.hpp; sourceTree = "<group>"; };
 		BFE949D3E77A675F3131B518 /* type_vec.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_vec.inl; sourceTree = "<group>"; };
+		BFE949EEA55C1145F94F751C /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../../opt/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		BFE949F0BED5A8D77F69D89D /* rotate_vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rotate_vector.hpp; sourceTree = "<group>"; };
 		BFE949F8119BE86A91E5E2F6 /* func_noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_noise.hpp; sourceTree = "<group>"; };
 		BFE94A075FC0CE00B2B0460A /* type_vec4.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_vec4.inl; sourceTree = "<group>"; };
@@ -211,18 +214,17 @@
 		BFE94B31F6CD56C7094BD7C9 /* extend.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = extend.inl; sourceTree = "<group>"; };
 		BFE94B685492492ECBCA3103 /* random.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = random.inl; sourceTree = "<group>"; };
 		BFE94B6DB2C45A8887A88FEF /* matrix_transform_2d.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = matrix_transform_2d.inl; sourceTree = "<group>"; };
+		BFE94B8EBFD084AAA8CA7349 /* libGLEW.1.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.10.0.dylib; path = ../../../../../opt/local/lib/libGLEW.1.10.0.dylib; sourceTree = "<group>"; };
 		BFE94B91B2530CCF2E6870B9 /* func_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_common.hpp; sourceTree = "<group>"; };
 		BFE94BA7653E1DC7731F16D0 /* type_vec3.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_vec3.inl; sourceTree = "<group>"; };
 		BFE94BA9EEFAD42EAB2D63AE /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
 		BFE94BB2881E60EBE61E82B6 /* func_packing.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = func_packing.inl; sourceTree = "<group>"; };
-		BFE94BC3119B88B2EDDCB3DF /* libGLEW.1.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.10.0.dylib; path = ../../../../../opt/local/lib/libGLEW.1.10.0.dylib; sourceTree = "<group>"; };
 		BFE94BD4856239DDD59EEA0C /* type_mat3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x3.hpp; sourceTree = "<group>"; };
 		BFE94BDF377862011279FEA3 /* type_vec2.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_vec2.inl; sourceTree = "<group>"; };
 		BFE94BE21F5FE28487589FB3 /* matrix_major_storage.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = matrix_major_storage.inl; sourceTree = "<group>"; };
 		BFE94BEAFAF3AA739C72A3A4 /* matrix_inverse.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = matrix_inverse.inl; sourceTree = "<group>"; };
 		BFE94BEF0585EA64D9DFDAF0 /* closest_point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = closest_point.hpp; sourceTree = "<group>"; };
 		BFE94BFB7BA3EA587CF27CC4 /* dual_quaternion.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = dual_quaternion.inl; sourceTree = "<group>"; };
-		BFE94C125D5B72F79DB7D1AC /* gamething */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gamething; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE94C14B2FFBBD401C7F0E4 /* func_integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_integer.hpp; sourceTree = "<group>"; };
 		BFE94C15558CF3E37C3E1179 /* type_mat2x3.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat2x3.inl; sourceTree = "<group>"; };
 		BFE94C19EA3998A6BA131EC0 /* perpendicular.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = perpendicular.inl; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		BFE94C29A68DB9EE18C58314 /* intrinsic_vector_relational.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = intrinsic_vector_relational.inl; sourceTree = "<group>"; };
 		BFE94C2C0E76E8357DF592D1 /* gamething.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = gamething.1; sourceTree = "<group>"; };
 		BFE94C3867AA501AA392D020 /* type_vec2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec2.hpp; sourceTree = "<group>"; };
+		BFE94C45C7ABF1A214C3127E /* ShaderContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderContainer.h; sourceTree = "<group>"; };
 		BFE94C7130DEF6683C862B6E /* inertia.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = inertia.inl; sourceTree = "<group>"; };
 		BFE94C82D0C30CD8E40B7F65 /* number_precision.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = number_precision.inl; sourceTree = "<group>"; };
 		BFE94C9AE599B0CE9D82849C /* func_vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_vector_relational.hpp; sourceTree = "<group>"; };
@@ -250,7 +253,6 @@
 		BFE94D33D351833F50206663 /* vec1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec1.hpp; sourceTree = "<group>"; };
 		BFE94D5EF77A1273094DB85F /* type_mat4x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x3.hpp; sourceTree = "<group>"; };
 		BFE94D66063738C15A908CF0 /* reciprocal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reciprocal.hpp; sourceTree = "<group>"; };
-		BFE94D79E420F664A0E09230 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		BFE94D9AF09C9751511FD4AB /* precision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = precision.hpp; sourceTree = "<group>"; };
 		BFE94DA9B3D01F5D883BD473 /* extented_min_max.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = extented_min_max.inl; sourceTree = "<group>"; };
 		BFE94DB5911AFD39BA05117F /* simd_quat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simd_quat.hpp; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		BFE94DD0687BF085C445B2C2 /* type_mat3x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x4.hpp; sourceTree = "<group>"; };
 		BFE94DDA2FBF4CA63EB92F6F /* matrix_query.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_query.hpp; sourceTree = "<group>"; };
 		BFE94DEC33D494AE4DF8F2EF /* matrix_interpolation.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = matrix_interpolation.inl; sourceTree = "<group>"; };
+		BFE94DECF4412521EC2992BE /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.fsh; sourceTree = "<group>"; };
 		BFE94DFDA3E74CAD44F37A13 /* intrinsic_integer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intrinsic_integer.hpp; sourceTree = "<group>"; };
 		BFE94E053F0B8355527584C7 /* type_half.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_half.hpp; sourceTree = "<group>"; };
 		BFE94E0BDF8FDF6EAC7E6473 /* type_mat4x3.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat4x3.inl; sourceTree = "<group>"; };
@@ -274,6 +277,7 @@
 		BFE94E7A9360EEB7219FF409 /* transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = transform.hpp; sourceTree = "<group>"; };
 		BFE94E7AABF32F0B55A706B6 /* orthonormalize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = orthonormalize.hpp; sourceTree = "<group>"; };
 		BFE94E920E6FCD13F5F7E526 /* simd_vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simd_vec4.hpp; sourceTree = "<group>"; };
+		BFE94E993F61B2F3BC182226 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
 		BFE94EAAC364403584B80372 /* associated_min_max.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = associated_min_max.hpp; sourceTree = "<group>"; };
 		BFE94EAE18DB7441A44C707B /* euler_angles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = euler_angles.hpp; sourceTree = "<group>"; };
 		BFE94EED7D006F9080A99443 /* intersect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = intersect.hpp; sourceTree = "<group>"; };
@@ -283,6 +287,7 @@
 		BFE94F2F78575A3DDC6E7E4F /* geometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = geometric.hpp; sourceTree = "<group>"; };
 		BFE94F3384E52818768F0D4E /* type_vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec3.hpp; sourceTree = "<group>"; };
 		BFE94F4DA75330815C5EA8FA /* exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exponential.hpp; sourceTree = "<group>"; };
+		BFE94F77FA304250827CD128 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		BFE94F8771C798B760B79F02 /* type_mat3x3.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat3x3.inl; sourceTree = "<group>"; };
 		BFE94F87E06E296D257E825F /* noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = noise.hpp; sourceTree = "<group>"; };
 		BFE94F904F92B58184F63DF7 /* quaternion.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = quaternion.inl; sourceTree = "<group>"; };
@@ -298,12 +303,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE941644CD5FC56CFF5DE9D /* Cocoa.framework in Frameworks */,
-				BFE9417DA5A679CAC6F8788C /* CoreVideo.framework in Frameworks */,
-				BFE94702B228976D642B2FB8 /* IOKit.framework in Frameworks */,
-				BFE9409A361D13246E069061 /* OpenGL.framework in Frameworks */,
-				BFE94B74767218CCCB631D27 /* libGLEW.1.10.0.dylib in Frameworks */,
-				BFE94EA56F5D583BF1287774 /* libglfw.3.1.dylib in Frameworks */,
+				BFE940DFB69248254050E422 /* Cocoa.framework in Frameworks */,
+				BFE94A41856C09D1AE0CAD28 /* CoreVideo.framework in Frameworks */,
+				BFE9465EB9858A24F27FE5D2 /* IOKit.framework in Frameworks */,
+				BFE94D95153AB7594593D4D0 /* OpenGL.framework in Frameworks */,
+				BFE9405EC389D0DAEB6AE42A /* libGLEW.1.10.0.dylib in Frameworks */,
+				BFE942975A598F138AFE237B /* libglfw.3.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,11 +530,21 @@
 			path = detail;
 			sourceTree = "<group>";
 		};
+		BFE942C23C61296351F7846F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9459646A31A45D28962D3 /* gamething */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BFE943DE115F6D24072CA682 /* gamething */ = {
 			isa = PBXGroup;
 			children = (
 				BFE945ACD119A35BA03A42C7 /* main.cpp */,
 				BFE94C2C0E76E8357DF592D1 /* gamething.1 */,
+				BFE941CA7804029EF603FA7D /* ShaderContainer.cpp */,
+				BFE94C45C7ABF1A214C3127E /* ShaderContainer.h */,
 			);
 			path = gamething;
 			sourceTree = "<group>";
@@ -609,35 +624,37 @@
 			path = glm;
 			sourceTree = "<group>";
 		};
-		BFE94A87B3991B4C3E0ADBC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BFE94C125D5B72F79DB7D1AC /* gamething */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BFE94A87F4AD4BEB02F85710 = {
 			isa = PBXGroup;
 			children = (
-				BFE94A87B3991B4C3E0ADBC6 /* Products */,
 				BFE943DE115F6D24072CA682 /* gamething */,
-				BFE94D0F83F7E9AD30B7FB8F /* Frameworks */,
 				BFE94454823909F0745DF5D9 /* ext */,
+				BFE94D481533F52AD66F15CC /* shaders */,
+				BFE942C23C61296351F7846F /* Products */,
+				BFE94C0F1B07FB18C53101BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BFE94D0F83F7E9AD30B7FB8F /* Frameworks */ = {
+		BFE94C0F1B07FB18C53101BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFE941B7BC82787D67863368 /* Cocoa.framework */,
-				BFE9407E08F3556FC83302D0 /* CoreVideo.framework */,
-				BFE94D79E420F664A0E09230 /* IOKit.framework */,
-				BFE9496494A0BD5F691EE5B0 /* OpenGL.framework */,
-				BFE94BC3119B88B2EDDCB3DF /* libGLEW.1.10.0.dylib */,
-				BFE94422930998FFA96F2C98 /* libglfw.3.1.dylib */,
+				BFE94526A36815451B6577E6 /* Cocoa.framework */,
+				BFE944BDFC4A35D03424CF2A /* CoreVideo.framework */,
+				BFE94E993F61B2F3BC182226 /* IOKit.framework */,
+				BFE94F77FA304250827CD128 /* OpenGL.framework */,
+				BFE94B8EBFD084AAA8CA7349 /* libGLEW.1.10.0.dylib */,
+				BFE949EEA55C1145F94F751C /* libglfw.3.1.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE94D481533F52AD66F15CC /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BFE94DECF4412521EC2992BE /* ColorShader.fsh */,
+				BFE943116315FF63AE2BBDD6 /* ColorShader.vsh */,
+			);
+			path = shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -657,7 +674,6 @@
 			);
 			name = gamething;
 			productName = gamething;
-			productReference = BFE94C125D5B72F79DB7D1AC /* gamething */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -676,7 +692,7 @@
 				en,
 			);
 			mainGroup = BFE94A87F4AD4BEB02F85710;
-			productRefGroup = BFE94A87B3991B4C3E0ADBC6 /* Products */;
+			productRefGroup = BFE942C23C61296351F7846F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -693,6 +709,7 @@
 				BFE945FEA59D24FB12033639 /* main.cpp in Sources */,
 				BFE944175E64E50EAAEE5B2E /* glm.cpp in Sources */,
 				BFE9461933B42541DE40733E /* dummy.cpp in Sources */,
+				BFE94C4938FF7BA0B957E368 /* ShaderContainer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,9 @@
-//
-//  main.cpp
-//
-
 #include <iostream>
-
 #include <glm/glm.hpp>
 #define GLEW_STATIC
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include "ShaderContainer.h"
 
 #define FPS 1.0/60
 
@@ -65,8 +61,8 @@ int main(int argc, const char * argv[])
 
     glfwSetKeyCallback(pWindow, key_callback);
 
-    const GLubyte* renderer = glGetString (GL_RENDERER); // get renderer string
-    const GLubyte* version = glGetString (GL_VERSION); // version as a string
+    const GLubyte* renderer = glGetString(GL_RENDERER); // get renderer string
+    const GLubyte* version = glGetString(GL_VERSION); // version as a string
 
     std::cout << "Renderer: " << renderer << "\n";
     std::cout << "OpenGL version supported: " << version << "\n";
@@ -74,6 +70,9 @@ int main(int argc, const char * argv[])
 
     double currentTimeMillis = 0;
     double lastRenderMillis = 0;
+
+    // Test
+    ShaderContainer *sc = new ShaderContainer("shaders/ColorShader.vsh", "shaders/ColorShader.fsh");
 
     bool running = true;
     while (running == 1) {
