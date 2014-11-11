@@ -9,7 +9,8 @@
 
 static void error_callback(int error, const char* description)
 {
-    fputs(description, stderr);
+    std::cout << description;
+    //fputs(description, stderr);
 }
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -72,7 +73,7 @@ int main(int argc, const char * argv[])
     double lastRenderMillis = 0;
 
     // Test
-    ShaderContainer *sc = new ShaderContainer("shaders/ColorShader.vsh", "shaders/ColorShader.fsh");
+    ShaderContainer *sc = new ShaderContainer("ColorShader.vsh", "ColorShader.fsh");
 
     bool running = true;
     while (running == 1) {

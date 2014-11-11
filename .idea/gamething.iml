@@ -2,6 +2,12 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+    <content url="file:///opt/local/lib/libGLEW.1.10.0.dylib">
+      <sourceFolder url="file:///opt/local/lib/libGLEW.1.10.0.dylib" isTestSource="false" />
+    </content>
+    <content url="file:///opt/local/lib/libglfw.3.1.dylib">
+      <sourceFolder url="file:///opt/local/lib/libglfw.3.1.dylib" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

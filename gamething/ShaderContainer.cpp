@@ -12,8 +12,15 @@ GLuint ShaderContainer::compileShader(GLenum shader, const char *source) {
 
     GLuint shaderHandle = glCreateShader(shader);
     glShaderSource(shaderHandle, 1, &source, NULL);
-
     glCompileShader(shaderHandle);
+
+    GLint rc;
+    glGetShaderiv(shaderHandle, GL_COMPILE_STATUS, &rc);
+    if(rc == 0) {
+        GLchar errorLog[1024] = {0};
+        glGetShaderInfoLog(shaderHandle, sizeof(errorLog), NULL, errorLog);
+        std::cout << "Error compiling shader:" << shader << ", " << errorLog;
+    }
 
     return shaderHandle;
 }
@@ -33,6 +40,18 @@ ShaderContainer::ShaderContainer(const char *filenameVs, const char *filenameFs)
 
     glLinkProgram(_programHandle);
 
+    GLint rc;
+    glGetProgramiv(_programHandle, GL_LINK_STATUS, &rc);
+    if (rc == 0) {
+        GLchar errorLog[1024] = {0};
+        glGetProgramInfoLog(_programHandle, sizeof(errorLog), NULL, errorLog);
+        printf("Error linking shader program: '%s'\n", errorLog);
+        exit(EXIT_FAILURE);
+    }
+
+    glValidateProgram(_programHandle);
+
+    // Won't delete, but will be marked as deletable
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
