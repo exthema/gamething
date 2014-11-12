@@ -11,6 +11,7 @@
 		38930B311A116CE1004A3446 /* ColorShader.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFE943116315FF63AE2BBDD6 /* ColorShader.vsh */; };
 		BFE9405EC389D0DAEB6AE42A /* libGLEW.1.10.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94B8EBFD084AAA8CA7349 /* libGLEW.1.10.0.dylib */; };
 		BFE940DFB69248254050E422 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE94526A36815451B6577E6 /* Cocoa.framework */; };
+		BFE940E613FCC8E51B809A66 /* DrawableEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE94779641572C0261E77B6 /* DrawableEntity.cpp */; };
 		BFE942975A598F138AFE237B /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE949EEA55C1145F94F751C /* libglfw.3.1.dylib */; };
 		BFE944175E64E50EAAEE5B2E /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE94CB66D29E677D843AAD8 /* glm.cpp */; };
 		BFE945FEA59D24FB12033639 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE945ACD119A35BA03A42C7 /* main.cpp */; };
@@ -156,6 +157,7 @@
 		BFE9472CE8E88A799980E260 /* mixed_product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mixed_product.hpp; sourceTree = "<group>"; };
 		BFE94755A0B35D9C5BA4D99A /* type_mat4x4.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = type_mat4x4.inl; sourceTree = "<group>"; };
 		BFE94768752F391B72DBCBDF /* func_geometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = func_geometric.hpp; sourceTree = "<group>"; };
+		BFE94779641572C0261E77B6 /* DrawableEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawableEntity.cpp; sourceTree = "<group>"; };
 		BFE9477F71940E1B868EDBC6 /* type_mat2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat2x2.hpp; sourceTree = "<group>"; };
 		BFE94794E89183F9EBEC63C9 /* matrix_transform_2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_transform_2d.hpp; sourceTree = "<group>"; };
 		BFE94797B443F8774BF3D51F /* type_float.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_float.hpp; sourceTree = "<group>"; };
@@ -275,11 +277,13 @@
 		BFE94E285FAB8867BAECC7D2 /* euler_angles.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = euler_angles.inl; sourceTree = "<group>"; };
 		BFE94E363130252A0C9515E0 /* optimum_pow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = optimum_pow.hpp; sourceTree = "<group>"; };
 		BFE94E37CB189E5512621CC4 /* intrinsic_matrix.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = intrinsic_matrix.inl; sourceTree = "<group>"; };
+		BFE94E3A53C9A40538D2D5FE /* DrawableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableEntity.h; sourceTree = "<group>"; };
 		BFE94E4DE66573BD1FC8ED2C /* string_cast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string_cast.hpp; sourceTree = "<group>"; };
 		BFE94E4F34BF3CBB4642B612 /* noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = noise.hpp; sourceTree = "<group>"; };
 		BFE94E5F694F375861E2B1AE /* string_cast.inl */ = {isa = PBXFileReference; lastKnownFileType = file.inl; path = string_cast.inl; sourceTree = "<group>"; };
 		BFE94E7A9360EEB7219FF409 /* transform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = transform.hpp; sourceTree = "<group>"; };
 		BFE94E7AABF32F0B55A706B6 /* orthonormalize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = orthonormalize.hpp; sourceTree = "<group>"; };
+		BFE94E8087944930D6DAA481 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		BFE94E920E6FCD13F5F7E526 /* simd_vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simd_vec4.hpp; sourceTree = "<group>"; };
 		BFE94E993F61B2F3BC182226 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
 		BFE94EAAC364403584B80372 /* associated_min_max.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = associated_min_max.hpp; sourceTree = "<group>"; };
@@ -549,6 +553,9 @@
 				BFE94C2C0E76E8357DF592D1 /* gamething.1 */,
 				BFE941CA7804029EF603FA7D /* ShaderContainer.cpp */,
 				BFE94C45C7ABF1A214C3127E /* ShaderContainer.h */,
+				BFE94779641572C0261E77B6 /* DrawableEntity.cpp */,
+				BFE94E3A53C9A40538D2D5FE /* DrawableEntity.h */,
+				BFE94E8087944930D6DAA481 /* types.h */,
 			);
 			path = gamething;
 			sourceTree = "<group>";
@@ -714,6 +721,7 @@
 				BFE944175E64E50EAAEE5B2E /* glm.cpp in Sources */,
 				BFE9461933B42541DE40733E /* dummy.cpp in Sources */,
 				BFE94C4938FF7BA0B957E368 /* ShaderContainer.cpp in Sources */,
+				BFE940E613FCC8E51B809A66 /* DrawableEntity.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,13 +4,13 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "ShaderContainer.h"
+#import "DrawableEntity.h"
 
 #define FPS 1.0/60
 
 static void error_callback(int error, const char* description)
 {
     std::cout << description;
-    //fputs(description, stderr);
 }
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -75,6 +75,9 @@ int main(int argc, const char * argv[])
     // Test
     ShaderContainer *sc = new ShaderContainer("ColorShader.vsh", "ColorShader.fsh");
 
+    DrawableEntity *e = new DrawableEntity();
+
+
     bool running = true;
     while (running == 1) {
 
@@ -86,6 +89,8 @@ int main(int argc, const char * argv[])
 
         if(currentTimeMillis - lastRenderMillis > FPS) {
             // render(pWindow);
+            e->draw();
+
             lastRenderMillis = glfwGetTime();
         }
 
